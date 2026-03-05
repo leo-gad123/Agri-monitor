@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 145 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 145 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 145 25% 15%;
+
+    --primary: 145 65% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 20% 92%;
+    --secondary-foreground: 145 25% 15%;
+
+    --muted: 145 15% 94%;
+    --muted-foreground: 145 10% 45%;
+
+    --accent: 145 25% 88%;
+    --accent-foreground: 145 25% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 145 20% 88%;
+    --input: 145 20% 88%;
+    --ring: 145 65% 35%;
+
+    --radius: 0.5rem;
+
+    /* Updated sidebar colors for better contrast and cohesion */
+    --sidebar-background: 145 25% 12%;
+    --sidebar-foreground: 145 15% 95%;
+    --sidebar-primary: 145 60% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 25% 22%;
+    --sidebar-accent-foreground: 145 15% 95%;
+    --sidebar-border: 145 20% 22%;
+    --sidebar-ring: 145 60% 45%;
+  }
+
+  .dark {
+    --background: 145 30% 8%;
+    --foreground: 145 15% 95%;
+
+    --card: 145 25% 12%;
+    --card-foreground: 145 15% 95%;
+
+    --popover: 145 25% 12%;
+    --popover-foreground: 145 15% 95%;
+
+    --primary: 145 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 20% 18%;
+    --secondary-foreground: 145 15% 95%;
+
+    --muted: 145 20% 18%;
+    --muted-foreground: 145 15% 65%;
+
+    --accent: 145 25% 22%;
+    --accent-foreground: 145 15% 95%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 145 20% 22%;
+    --input: 145 20% 22%;
+    --ring: 145 60% 45%;
+
+    /* Dark mode sidebar colors */
+    --sidebar-background: 145 30% 10%;
+    --sidebar-foreground: 145 15% 90%;
+    --sidebar-primary: 145 60% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 25% 20%;
+    --sidebar-accent-foreground: 145 15% 90%;
+    --sidebar-border: 145 20% 20%;
+    --sidebar-ring: 145 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
